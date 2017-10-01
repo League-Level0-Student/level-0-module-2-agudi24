@@ -3,10 +3,13 @@
 
 package methods;
 
+import javax.swing.JOptionPane;
+
 public class RocketShip {
 	public static void main(String[] args) {
 		
 		// 2. ask the user when to start (JOptionPane.showInputDialog)
+		String start = JOptionPane.showInputDialog("")
 		// 3. convert the user's answer to an int (Integer.parseInt)
 
 		// 4. count down from user's starting point
