@@ -6,6 +6,7 @@
 
 1: Ask the user for their birthday (mm/dd), e.g. 06/09
 
+
 2: If it matches today's date, wish them a happy birthday
 
 3: otherwise, wish them a very merry UNbirthday
