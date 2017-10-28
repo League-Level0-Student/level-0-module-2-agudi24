@@ -9,12 +9,11 @@ public class GoofyNames {
 		String goofyName = "";
 
 		// 1. Ask the user to enter their name, e.g. mario
-
+        String name = JOptionPane.showInputDialog("Enter your name:");
 		// 2. Print upper case name to the console using .toUpperCase(), e.g.MARIO
-
+        System.out.println(name.toUpperCase());
 		// 3. Loop through each character of the name (steps 4 - 6).
-		//    HINT: Use .length() to determine the number of characters in the String.
-
+        name.substring(1,4);
 			// 4. Create a String variable to store the next character of the name
 			//    using .substring(start, end)
 			//    HINT: replace 'start' and 'end' to get String with character at i 

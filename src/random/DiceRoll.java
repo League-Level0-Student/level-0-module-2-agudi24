@@ -1,9 +1,10 @@
 //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
-
 package random;
 
 import java.awt.Dimension;
+import java.util.Random;
+
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -48,7 +49,8 @@ public class DiceRoll {
 		rollButton.addActionListener((e) -> {
 
 			// 1. Make randomChoice equal to a random number between 1 and 6
-			int randomChoice = 3;
+			Random r = new Random();
+			int randomChoice = r.nextInt(7);
 
 			// 2. Fix the code below so that it displays the correct image
 			if (randomChoice == 1) {
@@ -61,7 +63,7 @@ public class DiceRoll {
 				label.setIcon(fourImg);
 			} else if (randomChoice == 5) {
 				label.setIcon(fiveImg);
-			} else {
+			} else if (randomChoice == 6){
 				label.setIcon(sixImg);
 			}
 		});
@@ -73,6 +75,11 @@ public class DiceRoll {
 		window.setVisible(true);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.pack();
+	}
+
+	private Random newRandom() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
